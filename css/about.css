@@ -1,0 +1,101 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    color: rgb(18,18,77);
+}
+header{
+    background-color: rgb(18,18,77);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+.pages{
+    margin-top: 1rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 1s;
+}
+nav li a:hover, nav li a:active{
+    color: rgb(63, 95, 63);
+}
+section{
+    padding: 2rem;
+}
+.section-title{
+    font-size: 2rem;
+    margin: 1.5rem;
+}
+.about-us{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.para-section{
+    border: solid;
+    border-color: rgbs(0, 0,  255, 0.5);
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+/*.center-section{
+    text-align: center;
+    border: solid;
+    border-color: rgbs(0, 0,  255, 0.5);
+    background-color: rgbs(0, 0,  255, 0.5);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: black;
+}*/
+nav ul li{
+    margin-bottom: 1rem;
+}
+.vision-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+footer{
+    background-color: rgb(18,18,77);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+}
+.section-title1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.5rem;
+}
+.section-title2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.5rem;
+}
+.list{
+    border: solid;
+    border-color: rgbs(0, 0,  255, 0.5);
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+table, tr,td,th{
+border: 2px solid rgb(18,18,77);;
+} 
