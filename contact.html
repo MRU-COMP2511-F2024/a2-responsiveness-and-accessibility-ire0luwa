@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="icon" href="/images/logo.png" type="image/png"><!--https://www.w3schools.com/html/html_favicon.asp-->
+    <link rel="icon" href="/images/logo.png" type="image/png"> <!-- Favicon -->
     <link rel="stylesheet" href="/css/contact.css">
 </head>
 
 <body>
     <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="Lybe Data Solutions Logo"> <!-- Logo -->
+        </div>
         <nav class="pages">
             <ul>
+                <li><a href="overview.html">Overview</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -22,31 +26,35 @@
     </header>
 
     <section class="contact">
-        <h2>Contact us</h2>
+        <h2>Contact Us</h2>
         <form id="form" method="post" action="mailto:damok465@mtroyal.ca">
             <label for="salutation">* Salutation: </label>
-            <select>
+            <select id="salutation" required>
                 <option>-- select an option --</option>
                 <option value="Mr.">Mr.</option>
-                <option value="miss">Miss</option>
-                <option value="mrs">Mrs</option>
-                <option value="dr">Dr.</option>
+                <option value="Miss">Miss</option>
+                <option value="Mrs">Mrs.</option>
+                <option value="Dr.">Dr.</option>
             </select>
 
             <div class="form-row">
                 <label for="first-name">* First Name:</label>
-                <input type="text" id="first-name" autofocus required>
+                <input type="text" id="first-name" name="first-name" autofocus required>
             </div>
             <div class="form-row">
                 <label for="last-name">* Last Name:</label>
-                <input type="text" id="last-name" required>
+                <input type="text" id="last-name" name="last-name" required>
             </div>
+
             <label for="email">* Email:</label>
-            <input type="email" id="email" placeholder="XXXXX@mtroyal.ca" required>
+            <input type="email" id="email" name="email" placeholder="XXXXX@mtroyal.ca" required>
+
             <label for="phone">* Phone Number:</label>
-            <input type="tel" id="tel" placeholder="010-234-5678">
+            <input type="tel" id="tel" name="phone" placeholder="010-234-5678">
+
             <label for="message">* Message:</label>
-            <textarea id="message" required></textarea>
+            <textarea id="message" name="message" required></textarea>
+
             <button type="submit">Submit</button>
             <input type="reset" value="Reset">
         </form>

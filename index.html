@@ -4,29 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Overview</title>
     <link rel="icon" href="/images/logo.png" type="image/png"> <!--https://www.w3schools.com/html/html_favicon.asp-->
     <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
     <header>
-
-        <nav>
+        <div class="logo">
+            <img src="/images/logo.png" alt="Logo">
+        </div>
+        <nav class="pages">
             <ul>
+                <li><a href="overview.html">Overview</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
     </header>
 
     <section class="home">
         <div>
-                    <!--Contents of the welcome message generated using openAI-->
-            <h1> Welcome to LYBE Data Solutions</h1>
+            <!--Contents of the welcome message generated using OpenAI-->
+            <h1>Welcome to LYBE Data Solutions</h1>
             <p class="index-word">Your best choice for data storage, analysis, and security.
                 We empower businesses by transforming raw data into valuable insights,
                 ensuring your information is stored securely and analyzed with precision.
@@ -44,15 +46,10 @@
             <p class="index-word">
                 "Your data tells a story—our solutions help you understand it, innovate with it, and turn
                 it into a powerful driver of growth and success."
-
             </p>
         </div>
-        <figure>
-            <img src="/images/logo.png" alt="LYBE LOGO" class="index-img">
-            <!--https://logo.com/dashboard?wordmark=LYBE+DATA+SOLUTIONS&industry=Technology&onboarding_completed=true-->
-            <figcaption style="font-style: italic;">Our Motto</figcaption>
-        </figure>
     </section>
+
     <footer>
         <p>Copyright &copy; 2024 LYBE DATA SOLUTIONS</p>
     </footer>

@@ -1,40 +1,43 @@
 
 body{
+    font-family: 'Times New Roman', Times, serif;
     margin: 20px;
     font-size: large;
 }
-header{
-    background-color: rgb(18,18,77);
-    color: white;
-    padding: 10px;
-    text-align: center;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(18, 18, 77); 
+    padding: 10px 20px;
 }
 
-/**.pages{
-    margin-top: 0.5rem;
-}**/
-nav ul {
+
+.logo img {
+    height: 50px; 
+}
+
+nav.pages ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    margin: 0;
     padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  nav ul li a:hover {
-    color: rgb(25, 220, 25);
-  }
-nav li a:active{
-    color: rgb(3, 48, 3);
 }
+
+nav.pages ul li {
+    margin-left: 20px;
+}
+
+nav.pages ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav.pages ul li a:hover {
+    color: green; 
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -51,11 +54,12 @@ textarea {
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: gray;
+    background-color: lightgrey;
     outline: rgb(18, 18, 77);
 }
 input[type="reset"]{
     background-color: rgb(18, 18, 77);
+    size: 100;
     color: white;
     font-size: 1rem;
     font-weight: bold;
@@ -69,9 +73,39 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-footer {
+footer p {
+    background-color: rgb(18, 18, 77);
+    color: white;
     text-align: center;
-    font-size: 0.9rem;
-    color: #555;
-    padding: 20px 0;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav.pages ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    nav.pages ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+    }
+
+    form input, form select, form textarea {
+        font-size: 16px;
+    }
+
+    form button, form input[type="reset"] {
+        font-size: 14px;
+    }
 }
