@@ -45,6 +45,23 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+a:link {
+    background-color: rgb(18, 18, 77);
+  }
+  
+  a:visited {
+    background-color:rgb(18, 18, 77);
+  }
+  
+  a:hover {
+    background-color: lightgreen;
+  }
+
+ a:active{
+    background-color: rgb(20, 74, 20);
+    color: white;
+    text-decoration: underline;
+}
 
 p{
     color: rgb(18, 18, 77);

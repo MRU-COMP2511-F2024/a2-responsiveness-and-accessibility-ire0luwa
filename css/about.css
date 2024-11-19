@@ -36,10 +36,23 @@ nav.pages ul li a {
     font-size: 16px;
 }
 
-nav.pages ul li a:hover {
-    color: green; 
-}
+a:link {
+    background-color: rgb(18, 18, 77);
+  }
+  
+  a:visited {
+    background-color:rgb(18, 18, 77);
+  }
+  
+  a:hover {
+    background-color: lightgreen;
+  }
 
+ a:active{
+    background-color: rgb(20, 74, 20);
+    color: white;
+    text-decoration: underline;
+}
 
 main {
     padding: 20px;
